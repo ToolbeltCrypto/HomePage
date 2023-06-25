@@ -1,0 +1,213 @@
+html {
+    --white: #fcf8d6;
+    --color1: #e69a62;
+    --color2: #e08159;
+    --color3: #ae5137;
+    --color4: #722b24;
+    --black: #0c1018;
+    --blackTransparent: #0c1018ee;
+    cursor: default;
+    user-select: none;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--color1);
+    background-image: linear-gradient(#00000033, #00000033), url('avatar.png');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 24%;
+}
+
+a {
+    color: transparent;
+} a:hover {
+    color: var(--color3);
+}
+
+::placeholder {
+    color: var(--color4);
+    text-align: center;
+} ::-ms-input-placeholder {
+    color: var(--color4);
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: serif;
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 64px;
+    padding-top: 20px;
+}
+
+button {
+    display: inline-block;
+    box-shadow: 8px 8px 16px var(--black);
+    background-color: var(--color1);
+    background: linear-gradient(var(--color1), var(--color2));
+    border: none;
+    border-radius: 5px;
+    color: var(--black);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+    overflow: hidden;
+} button:hover {
+    background: var(--color2);
+} input {
+    color: var(--white);
+    width: 100%;
+    height: 32px;
+    margin: 0px;
+    border: none;
+    background-color: var(--color1);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px 8px;
+    border-radius: 5px;
+    box-shadow: 0 4px 16px 2px rgba(0,0,0,0.2);
+    transition: box-shadow 0.8s ease;
+    user-select: text;
+} input:focus {
+    outline: none;
+    box-shadow: 0 4px 16px 2px rgba(0,0,0,0.55);
+    transition: box-shadow 0.8s ease;
+}
+
+.zone {
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    display: inline-block;
+    background-color: transparent;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    text-shadow: 2px 2px var(--black);
+} .navbar div {
+    float: left;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+} .navbar div:hover {
+    background-color: var(--white);
+    color: var(--black);
+    text-shadow: none;
+}
+
+.homeWrap {
+    display: none;
+    background-color: var(--blackTransparent);
+    color: var(--white);
+    border-radius: 12px;
+    margin: 16px;
+    padding: 8px;
+    padding-top: 8px;
+    height: fit-content;
+} .homeWrap .homeWrap2 {
+    background-color: var(--color1);
+    color: inherit;
+    border-radius: 6px;
+    margin: 8px;
+    padding: 16px;
+    padding-top: 8px;
+    width: 256px;
+} .homeWrap .homeWrap2:hover {
+    background: var(--color2);
+    cursor: pointer;
+} .homeWrap [name='homeWrapToggle'] {
+    display: none;
+} .homeWrap [name='homeWrapToggle'] p {
+    margin-top: 12px;
+    margin-bottom: -4px;
+} .homeWrap .homeTitle {
+    font-weight: 500;
+    font-family: serif;
+    font-size: 28px;
+    margin: 8px;
+} .homeWrap .homeDescriptor {
+    font-weight: 600;
+    color: var(--color4);
+} .homeWrap p {
+    margin: 0;
+    margin-bottom: -8px;
+}
+
+.socialPage {
+    background-color: var(--blackTransparent);
+    color: inherit;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 16px;
+    padding-top: 8px;
+} .socialWrap {
+    margin: 16px;
+    background: linear-gradient(var(--color1), var(--color2));
+    border-radius: 8px;
+    width: calc(100% - 32px);
+} .socialWrap:hover {
+    background: var(--color2);
+    cursor: pointer;
+} .socialWrap2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: -20px;
+} .socialWrap [name='socialWrapToggle'] {
+    display: none;
+} .socialTitle {
+    color: var(--white);
+    font-weight: 500;
+    font-family: serif;
+    font-size: 28px;
+    padding: 8px;
+    margin: 8px;
+    margin-bottom: 0;
+} .socialDescriptor {
+    color: var(--white);
+    margin-right: 4px;
+    margin-bottom: 8px;
+} a .socialDescriptor {
+    color: var(--color4);
+}
+
+/* -----copy----- */
+
+#homeGrid {
+    position: absolute;
+    display: grid;
+    grid-auto-columns: minmax(auto, auto);
+    grid-auto-rows: minmax(auto, auto);
+}
