@@ -1,17 +1,21 @@
 html {
-    --color1: #4CAF50;
-    --color2: #3e8e41;
-    --color3: #307032;
-    --color4: #295d2a;
-    --white: #f2f2f2;
-    --black: #333;
-    --blackTransparent: #33333380;
+    --white: #fcf8d6;
+    --color1: #e69a62;
+    --color2: #e08159;
+    --color3: #ae5137;
+    --color4: #722b24;
+    --black: #0c1018;
+    --blackTransparent: #0c1018ee;
     cursor: default;
     user-select: none;
+    color: var(--white);
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--color1);
+    background-image: linear-gradient(#00000033, #00000033), url('avatar.png');
+    background-attachment: fixed;
+    background-size: cover;
     font-family: arial, sans-serif; 
     margin: 0;
     padding: 0;
@@ -27,7 +31,7 @@ br {
 a {
     color: transparent;
 } a:hover {
-    color: var(--color1);
+    color: var(--color3);
 }
 
 ::placeholder {
@@ -47,16 +51,21 @@ a {
 }
 
 h1 {
-    margin-top: 80px;
+    font-family: serif;
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 64px;
     padding-top: 20px;
 }
 
 button {
     display: inline-block;
+    box-shadow: 8px 8px 16px var(--black);
     background-color: var(--color1);
+    background: linear-gradient(var(--color1), var(--color2));
     border: none;
     border-radius: 5px;
-    color: var(--white);
+    color: var(--black);
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -95,11 +104,12 @@ button {
 .navbar {
     position: fixed;
     display: inline-block;
+    background-color: transparent;
+    overflow: hidden;
     top: 0;
-    background-color: var(--black);
     width: 100%;
     padding: 16px;
-    overflow: hidden;
+    text-shadow: 2px 2px var(--black);
 } .navbar div {
     float: left;
     color: var(--white);
@@ -112,11 +122,12 @@ button {
 } .navbar div:hover {
     background-color: var(--white);
     color: var(--black);
+    text-shadow: none;
 }
 
 .homeWrap {
     display: none;
-    background-color: var(--black);
+    background-color: var(--blackTransparent);
     color: var(--white);
     border-radius: 12px;
     margin: 16px;
@@ -125,7 +136,7 @@ button {
     height: fit-content;
 } .homeWrap .homeWrap2 {
     background-color: var(--color1);
-    color: var(--white);
+    color: inherit;
     border-radius: 6px;
     margin: 8px;
     padding: 16px;
@@ -152,11 +163,21 @@ button {
     margin-bottom: -8px;
 }
 
-.socialWrap {
+.socialPage {
+    background-color: var(--blackTransparent);
+    color: inherit;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 16px;
+    padding-top: 8px;
+} .socialWrap {
     margin: 16px;
-    background-color: var(--black);
+    background: linear-gradient(var(--color1), var(--color2));
     border-radius: 8px;
-    width: 256px;
+    width: calc(100% - 32px);
+} .socialWrap:hover {
+    background: var(--color2);
+    cursor: pointer;
 } .socialWrap2 {
     display: flex;
     justify-content: center;
@@ -164,6 +185,8 @@ button {
     padding-left: 8px;
     padding-right: 8px;
     margin-top: -20px;
+} .socialWrap [name='socialWrapToggle'] {
+    display: none;
 } .socialTitle {
     color: var(--white);
     font-weight: 500;
@@ -175,11 +198,9 @@ button {
 } .socialDescriptor {
     color: var(--white);
     margin-right: 4px;
+    margin-bottom: 8px;
 } a .socialDescriptor {
-    color: var(--color1);
-} .socialValue {
-    color: var(--white);
-    overflow: hidden;
+    color: var(--color4);
 }
 
 /* -----copy----- */

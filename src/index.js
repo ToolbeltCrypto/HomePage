@@ -7,6 +7,17 @@ document.addEventListener('keypress', (k) => {
     }
 });
 
+function setupToggleDisplay(wrap) {
+    let eWrap = document.getElementsByClassName(wrap);
+    for (let i=0; i < eWrap.length; i++) {
+        eWrap[i].addEventListener("click", () => {
+            let eWrapToggle = eWrap[i].children[1];
+            if (eWrapToggle.style.display == '') {
+                eWrapToggle.style.display = 'block';
+            } else {
+                eWrapToggle.style.display = '';
+}})}}
+
 
 //NAV
 function displayRemoveZones() {
@@ -26,16 +37,7 @@ eLinkSocial.forEach((e) => {e.addEventListener("click", () => {displayZone('Soci
 
 
 //HOME
-let eHomeWrap2 = document.getElementsByClassName('homeWrap2');
-for (let i=0; i < eHomeWrap2.length; i++) {
-    eHomeWrap2[i].addEventListener("click", () => {
-        let eHomeWrapToggle = eHomeWrap2[i].children[1];
-        if (eHomeWrapToggle.style.display == '') {
-            eHomeWrapToggle.style.display = 'block';
-        } else {
-            eHomeWrapToggle.style.display = '';
-}})}
-
+setupToggleDisplay('homeWrap2');
 let homeSections = ['Token', 'Locker', 'Affiliate', 'Sale', 'Event', 'Approve', 'Stake'];
 for (let i=0; i < homeSections.length; i++) {
     document.getElementById('home' + homeSections[i]).addEventListener("click", () => {
@@ -45,3 +47,6 @@ for (let i=0; i < homeSections.length; i++) {
         } else {
             eHomeWrap.style.display = "";
 }})};
+
+//SOCIAL
+setupToggleDisplay('socialWrap');
