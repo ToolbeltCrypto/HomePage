@@ -125,40 +125,55 @@ button {
     text-shadow: none;
 }
 
-.homeWrap {
-    display: none;
-    background-color: var(--blackTransparent);
+.homeContainer {
+    background-color: var(--black);
     color: var(--white);
     border-radius: 12px;
     margin: 16px;
+    width: 324px;
+    height: fit-content;
+} .homeContainerToggle {
+    font-size: 14px;
+    margin: 16px;
     padding: 8px;
     padding-top: 8px;
-    height: fit-content;
-} .homeWrap .homeWrap2 {
+    cursor: pointer;
+} .homeWrap {
+    display: none;
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: -16px;
+} .homeWrap2 {
     background-color: var(--color1);
     color: inherit;
     border-radius: 6px;
-    margin: 8px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 8px;
     padding: 16px;
     padding-top: 8px;
     width: 256px;
-} .homeWrap .homeWrap2:hover {
+} .homeWrap2:hover {
     background: var(--color2);
     cursor: pointer;
 } .homeWrap [name='homeWrapToggle'] {
     display: none;
-} .homeWrap [name='homeWrapToggle'] p {
-    margin-top: 12px;
+} .homeWrap [name='homeWrapToggle'] a {
+    font-size: 14px;
+    margin-top: 16px;
     margin-bottom: -4px;
-} .homeWrap .homeTitle {
+} .homeWrap [name='homeWrapToggle'] p {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: -4px;
+} .homeTitle {
     font-weight: 500;
-    font-family: serif;
+    font-family: var(--font2);
     font-size: 28px;
     margin: 8px;
-} .homeWrap .homeDescriptor {
-    font-weight: 600;
-    color: var(--color4);
-} .homeWrap p {
+} .homeDescriptor {
+    color: var(--white);
+} .homeWrap2 p {
     margin: 0;
     margin-bottom: -8px;
 }
