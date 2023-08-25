@@ -2,222 +2,140 @@
 
 <!-- HOME -->
 <div class="zone" id="zoneHome">
-    <h1></h1>
-    <button id="homeToken">TOKEN</button>
-    <button id="homeLocker">LOCKER</button>
-    <button id="homeAffiliate">AFFILIATE</button>
-    <button id="homeSale">PRESALE</button>
-    <button id="homeEvent">EVENT</button>
-    <button id="homeApprove">APPROVAL</button>
-    <button id="homeStake">STAKING</button>
-    <div id="homeGrid">
+        <h1>Welcome</h1>
+        <p>Discover an ecosystem built for you.</p>
+        <div style="display: flex; justify-content: center;">
+            <div id="homeGrid">
 
-        <div class="homeWrap" id="homeWrapToken" style="grid-column: 1;">
-            <p class="homeTitle">TOKEN</p>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Overview:</p>
-                <div name="homeWrapToggle">
-                    <p>Solutions focused token with community ownership and revenue generating dapps.</p>
+                <div class="homeContainer" style="grid-column: 1;">
+                    <div class="homeContainerToggle" id="homeCommunity"> 
+                        <p class="homeTitle">COMMUNITY</p>
+                        <p>Take part in smart contract ownership and ask questions.</p>
+                    </div>
+
+                    <div class="homeWrap" id="homeWrapCommunity">
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Community Ownership</p>
+                            <div name="homeWrapToggle">
+                                <p>All smart contract changes are accessible to the community. Gain voting power by purchasing tokens.</p>
+                            </div>
+                        </div>
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Discussions</p>
+                            <div name="homeWrapToggle">
+                                <p>Chat with community members about innovation and the future of defi.</p>
+                            </div>
+                        </div>
+
+                        <a target="_blank" href="https://t.me/ToolbeltOfficial" tabindex="0">
+                            <div class="homeWrap2">
+                                <p class="homeDescriptor" tabindex="0">Join Now</p>
+                            </div>
+                        </a>
+
+                        <div style="margin-bottom: 16px;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Tokenomics:</p>
-                <div name="homeWrapToggle">
-                    <p>Transfer fees: 4% into staking.</p>
-                    <p>Total supply: 1M tokens.</p>
-                    <p>Supply distribution: 10% to team, 90% to open-market.</p>
-                    <p>Minting: Only at token deployment.</p>
+
+                <div class="homeContainer" style="grid-column: 2;">    
+                    <div class="homeContainerToggle" id="homeRevenue"> 
+                        <p class="homeTitle">REVENUE</p>
+                        <p>Obtain direct revenue from dapp interactions and token transfers.</p>
+                    </div>
+
+                    <div class="homeWrap" id="homeWrapRevenue">
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Token Demand</p>
+                            <div name="homeWrapToggle">
+                                <p>Revenue will always be distributed to stakers in Toolbelt tokens.</p>
+                                <p>Dapps that distribute revenue will either buy tokens from the market or require tokens that have been bought.</p>
+                                <p>This creates demand to buy Toolbelt tokens for reasons other than hype.</p>
+                            </div>
+                        </div>
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Expansion</p>
+                            <div name="homeWrapToggle">
+                                <p>Constructing value for other crypto projects through dapps creates opportunity.</p>
+                                <p>Opportunities include revenue growth, reaching new communities, and pushing defi towards true decentralization.</p>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" tabindex="0">
+                            <div class="homeWrap2" name="linkStake" tabindex="0">
+                                <p class="homeDescriptor" tabindex="0">Earn Now</p>
+                                <div name="homeWrapToggle"></div>
+                            </div>
+                        </a>
+                        <div style="margin-bottom: 16px;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Alterable:</p>
-                <div name="homeWrapToggle">
-                    <p>------------------------------------------------</p>
-                    <p>Change token transfer fee.</p>
-                    <p style="color: var(--color4)">setTaxPerThousand(uint)</p>
-                    <p>Requirements: <= 100 (10%).</p>
-                    <p>------------------------------------------------</p>
-                    <p>Exclude transfer fee with address.</p>
-                    <p style="color: var(--color4)">addIgnoreFee(address)</p>
-                    <p>------------------------------------------------</p>
-                    <p>Include transfer fee with address.</p>
-                    <p style="color: var(--color4)">removeIgnoreFee(address)</p>
-                    <p>------------------------------------------------</p>
+
+                <div class="homeContainer" style="grid-column: 1; grid-row: 2;">    
+                    <div class="homeContainerToggle" id="homeDecentralize"> 
+                        <p class="homeTitle">DECENTRALIZE</p>
+                        <p>Shift the power dynamic and envision a new wave of decentralization.</p>
+                    </div>
+
+                    <div class="homeWrap" id="homeWrapDecentralize">
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Centralization Issue</p>
+                            <div name="homeWrapToggle">
+                                <p>Centralization of power poses a large risk as exploiting investors for selfish profit is quite common in defi.</p>
+                                <p>By removing restrictons on smart contract functions, the community as a whole has more power to change the contract than the CEO.</p>
+                                <p>Since defi is based on the allure of decentralization, our goal is to expand the use of decentralization with decentralized applications.</p>
+                            </div>
+                        </div>
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Data Storage</p>
+                            <div name="homeWrapToggle">
+                                <p>All data is stored and secured by blockchain. No data is permanently stored on this webpage.</p>
+                                <p>We achieve web3 status as our user interface is decentralized. Anyone is able to create a webpage to interact with our dapps.</p>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" tabindex="0">
+                            <div class="homeWrap2" name="linkLocker" tabindex="0">
+                                <p class="homeDescriptor" tabindex="0">Vote Now</p>
+                                <div name="homeWrapToggle"></div>
+                            </div>
+                        </a>
+                        <div style="margin-bottom: 16px;"></div>
+                    </div>
+                </div>
+
+                <div class="homeContainer" style="grid-column: 2; grid-row: 2;">    
+                    <div class="homeContainerToggle" id="homeTrack"> 
+                        <p class="homeTitle">TRACK</p>
+                        <p>With an incredible amount of data, blockchain requires tools for decoding.</p>
+                    </div>
+
+                    <div class="homeWrap" id="homeWrapTrack">
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Token Approval</p>
+                            <div name="homeWrapToggle">
+                                <p>With approval, smart contracts can take tokens on behalf of the user.</p>
+                                <p>Some contracts can exploit approvals by stealing excessively approved tokens.</p>
+                                <p>One element of safety can be assured by tracking and managing approvals.</p>
+                            </div>
+                        </div>
+                        <div class="homeWrap2">
+                            <p class="homeDescriptor" tabindex="0">Events</p>
+                            <div name="homeWrapToggle">
+                                <p>Events log blockchain interactions.</p>
+                                <p>A familiar event, Transfer, is tracked by BscScan to monitor token movement.</p>
+                                <p>Uncover any hidden event by subscribing.</p>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" tabindex="0">
+                            <div class="homeWrap2" name="linkEvent" tabindex="0">
+                                <p class="homeDescriptor" tabindex="0">Track Now</p>
+                                <div name="homeWrapToggle"></div>
+                            </div>
+                        </a>
+                        <div style="margin-bottom: 16px;"></div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="homeWrap" id="homeWrapLocker" style="grid-column: 2;">
-            <p class="homeTitle">LOCKER</p>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Overview:</p>
-                <div name="homeWrapToggle">
-                    <p>Lock smart contract and restore community ownership.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Solution:</p>
-                <div name="homeWrapToggle">
-                    <p>Most developers have exclusive access to certain functions. Posing a centralization risk, this allows for contract exploitation.</p>
-                    <p>The locker secures a dimension of trust by granting community access to all contract changes.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Voting:</p>
-                <div name="homeWrapToggle">
-                    <p>75%+ to successfully change the smart contract.</p>
-                    <p>Since inactive members are more likely to resist change, voting is not based on 50%.</p>
-                    <p>Vote to enable/disable voting.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Fees:</p>
-                <div name="homeWrapToggle">
-                    <p>Resets days after last creation.</p>
-                    <p>weiBaseFee * 2^(creationAmount)</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Alterable:</p>
-                <div name="homeWrapToggle">
-                    <p>------------------------------------------------</p>
-                    <p>Voting duration.</p>
-                    <p style="color: var(--color4)">setVoteEndPeriod(uint)</p>
-                    <p>Requirements: between 86400 and 2592000 seconds.</p>
-                    <p>------------------------------------------------</p>
-                    <p>Fee expansion duration since last creation.</p>
-                    <p style="color: var(--color4)">setFeeResetPeriod(uint)</p>
-                    <p>Requirements: between 86400 and 2592000 seconds.</p>
-                    <p>------------------------------------------------</p>
-                    <p>Create Delta cost multiplier.</p>
-                    <p style="color: var(--color4)">setWeiBaseFee(uint)</p>
-                    <p>Requirements: between 10^10 and 10^20 Toolbelt tokens in wei.</p>
-                    <p>------------------------------------------------</p>
-                    <p>Stakers' voting power multiplier.</p>
-                    <p style="color: var(--color4)">setStakeVotePercent(uint)</p>
-                    <p>Requirements: <= 10000%.</p>
-                    <p>------------------------------------------------</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="homeWrap" id="homeWrapAffiliate" style="grid-column: 3;">
-            <p class="homeTitle">AFFILIATE</p>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Overview:</p>
-                <div name="homeWrapToggle">
-                    <p>Refer investors and sign up with an affiliate to earn and discount transfer fees, respectively.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Transfer portions (Toolbelt):</p> 
-                <div name="homeWrapToggle">
-                    <p>80% of fee to staking.</p> 
-                    <p>15% of fee to affiliate.</p>
-                    <p>5% discount to sender.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Transfer portions (other):</p>
-                <div name="homeWrapToggle">
-                    <p>5% of fee to staking.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="homeWrap" id="homeWrapSale" style="grid-column: 4;">
-            <p class="homeTitle">PRESALE</p>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Overview:</p>
-                <div name="homeWrapToggle">
-                    <p>Particpate in the creation of a token's liquidity pool.</p>
-                    <p>Liquidity soft locks for a year.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Solution:</p>
-                <div name="homeWrapToggle">
-                    <p>Most presales require payment to initiate the presale. This barrier inhibits the growth of new projects.</p>
-                    <p>To combat this, Toolbelt has created a payment free presale avaliable to any token.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Lock agreement:</p>
-                <div name="homeWrapToggle">
-                    <p>Unlocking liquidity causes a penalty based on time left. The entire fee will be sent to stakers.</p>
-                    <p>Toolbelt is unable to unlock liquidity prior to a year.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="homeWrap" id="homeWrapEvent" style="grid-column: 5;">
-            <p class="homeTitle">EVENT</p>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Overview:</p>
-                <div name="homeWrapToggle">
-                    <p>Subscribe to any blockchain event and keep track of its information.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">What are events?</p>
-                <div name="homeWrapToggle">
-                    <p>Token events are ways to observe blockchain interactions.</p>
-                    <p>For example, an event is emitted during a token transfer. Etherscan tracks transfer events and displays them in a viewable format.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Cost:</p>
-                <div name="homeWrapToggle">
-                    <p>Stake one token per subscription.</p>
-                    <p>Unstaking will not remove subscriptions.</p>
-                    <p>Unsubscribing will not reduce the stake requirement.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="homeWrap" id="homeWrapApprove" style="grid-column: 6;">
-            <p class="homeTitle">APPROVAL</p>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Overview:</p>
-                <div name="homeWrapToggle">
-                    <p>Track and alter token approvals accordingly.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">What are approvals?</p>
-                <div name="homeWrapToggle">
-                    <p>Token approvals allow contracts to take your tokens.</p>
-                    <p>For example, a swap takes your tokens, converts them into different tokens, then transfers the other tokens back.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Cost:</p>
-                <div name="homeWrapToggle">
-                    <p>Free for anyone to use.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="homeWrap" id="homeWrapStake" style="grid-column: 7;">
-            <p class="homeTitle">STAKING</p>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Overview:</p>
-                <div name="homeWrapToggle">
-                    <p>Lock tokens to generate revenue.</p>
-                    <p>Yield varies based on transfer fees and dapp adoption.</p>
-                </div>
-            </div>
-            <div class="homeWrap2">
-                <p class="homeDescriptor" tabindex="0">Lock agreement:</p>
-                <div name="homeWrapToggle">
-                    <p>Claim rewards at anytime.</p>
-                    <p>Unstaking prior to a year will result in a fee awarded to stakers.</p>
-                </div>
-            </div>
-        </div>
-
     </div>
-</div>
 
 <!-- SOCIAL -->
 <div class="zone" id="zoneSocial" style="display: none;">
