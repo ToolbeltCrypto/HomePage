@@ -34,7 +34,9 @@ a {
     color: var(--color3);
 }
 
-::placeholder {
+::-webkit-scrollbar {
+    width: 0px;
+} ::placeholder {
     color: var(--color4);
     text-align: center;
 } ::-ms-input-placeholder {
