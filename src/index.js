@@ -12,11 +12,12 @@ function setupToggleDisplay(wrap) {
     for (let i=0; i < eWrap.length; i++) {
         eWrap[i].addEventListener("click", () => {
             let eWrapToggle = eWrap[i].children[1];
-            if (eWrapToggle.style.display == '') {
-                eWrapToggle.style.display = 'block';
-            } else {
-                eWrapToggle.style.display = '';
-}})}}
+            if (eWrapToggle != undefined) {
+                if (eWrapToggle.style.display == '') {
+                    eWrapToggle.style.display = 'block';
+                } else {
+                    eWrapToggle.style.display = '';
+}}})}}
 
 
 //NAV
@@ -38,7 +39,7 @@ eLinkSocial.forEach((e) => {e.addEventListener("click", () => {displayZone('Soci
 
 //HOME
 setupToggleDisplay('homeWrap2');
-let homeSections = ['Token', 'Locker', 'Affiliate', 'Sale', 'Event', 'Approve', 'Stake'];
+let homeSections = ['Community', 'Revenue', 'Decentralize', 'Track'];
 for (let i=0; i < homeSections.length; i++) {
     document.getElementById('home' + homeSections[i]).addEventListener("click", () => {
         let eHomeWrap = document.getElementById('homeWrap' + homeSections[i]);
